@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+# Date: 14-11-2025
+## Register Number: 212223220080
+## Name: Preethi J
 ## Problem Title
 SIH 1555: Create a Virtual Herbal Garden that provides an interactive, educational, and immersive experience to users, showcasing the diverse range of medicinal plants used in AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy).
 ## Problem Description
@@ -11,16 +11,55 @@ Background: The AYUSH sector relies heavily on medicinal plants and herbs, which
 Ministry of Ayush
 
 ## Idea
+The Virtual Herbal Garden aims to digitize the exploration of medicinal plants from the AYUSH system. It provides an immersive 3D experience where users can rotate and inspect plant models, read detailed herbal information, watch videos, take virtual tours, and bookmark their favourite plants. This platform bridges the accessibility gap by bringing herbal knowledge to students, practitioners, and the public through an interactive online experience.
 
 
 ## Proposed Solution / Architecture Diagram
+The proposed solution is to build an interactive Virtual Herbal Garden that allows users to explore medicinal plants digitally through an immersive 3D environment. The platform integrates 3D plant models created using Blender or scanned assets, rendered in the browser using Three.js or Babylon.js. A modern web interface built with React or Vue provides smooth navigation, search, filtering, virtual tours, and detailed plant information pages. Each plant entry includes botanical details, habitat, medicinal uses, cultivation methods, images, audio, and videos stored in secure cloud storage. The backend—developed using Node.js or Django—serves plant data through REST APIs, while a database such as MongoDB or PostgreSQL stores structured herbal information. Additional components include a search engine, user authentication, bookmarking, and a note-taking system. The system architecture ensures high accessibility, scalability, and an engaging user experience, effectively making Ayurvedic and traditional herbal knowledge available to learners, researchers, and the public without requiring physical access to herbal gardens.
 
 
 ## Use Cases
 
+* Explore Plants in 3D: Users interact with rotatable, zoomable herbal plant models.
+* Search & Filter: Users search plants by medicinal use, name, region, plant type, etc.
+* View Plant Details: Each plant displays botanical name, uses, habitat, and multimedia.
+* Virtual Guided Tours: Narrated tours showcasing plants grouped by health themes.
+* Bookmark Plants: Users save favourite plants for quick access.
+* Take Notes: Users write personal notes linked to each plant.
+* Admin Management: Admins add, update, and manage plant info and multimedia content.
+
 
 ## Technology Stack
+* Frontend:
+  - React.js / Vue.js
+  - Three.js / Babylon.js for 3D models
+  - TailwindCSS for UI
+
+* Backend:
+  - Node.js (Express) or Django REST Framework
+
+* Database:
+  - MongoDB or PostgreSQL
+
+* 3D Assets:
+  - Blender-generated GLB/FBX models
+
+* Storage:
+  - Cloud storage (AWS S3 / Firebase)
+
+* Search:
+  - ElasticSearch or built-in DB filtering
 
 
 ## Dependencies
+
+* Three.js / Babylon.js – 3D model rendering
+* React / Vue – Frontend architecture
+* Axios / Fetch API – API requests
+* Node.js / Django – Backend framework
+* MongoDB/PostgreSQL drivers – Database drivers
+* Cloud Storage SDKs – For storing multimedia
+* JWT Authentication – Secure login
+* Blender Tools – For preparing 3D plant models
+
 
